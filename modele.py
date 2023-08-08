@@ -5,7 +5,7 @@ from PIL import Image
 image_folder = "img"
 
 # Chemin vers le dossier où vous voulez enregistrer les images prétraitées
-output_folder = "sortie"
+output_folder = "img-pretraitees"
 
 # Obtenir la liste des fichiers JPG dans le dossier
 image_files = filter(lambda file: file.endswith(".jpg"), os.listdir(image_folder))
