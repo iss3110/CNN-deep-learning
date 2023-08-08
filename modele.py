@@ -10,8 +10,8 @@ output_folder = "img-pretraitees"
 # Obtenir la liste des fichiers JPG dans le dossier
 image_files = filter(lambda file: file.endswith(".jpg"), os.listdir(image_folder))
 
-# Prétraiter chaque image en utilisant PIL et redimensionner à 224x224
-resize_and_save = lambda filename: Image.open(os.path.join(image_folder, filename)).resize((224, 224)).save(
+# Prétraitement avec PIL et redimensionner à 245x245
+resize_and_save = lambda filename: Image.open(os.path.join(image_folder, filename)).resize((245, 245)).save(
     os.path.join(output_folder, filename)
 )
 
